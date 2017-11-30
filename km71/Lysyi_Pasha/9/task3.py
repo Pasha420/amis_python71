@@ -1,10 +1,10 @@
-def power(a, n): #визначаємо функцію
-    if n == 0: # конструкція іf-else, котра підносить число в степені
-        return 1 #повертаємо одиницю 
+def power(a, n): 
+    if n == 0: 
+        return 1 
     elif n % 2 == 1: 
-        return power(a, n - 1) * a #повертаємо результат 
+        return power(a, n - 1) * a 
     else: 
-        return power(a, n // 2) ** 2 #повертаємо результат 
+        return power(a, n // 2)*power(a, n // 2) 
         
 a = float(input("Будь ласка введіть числo a ")) #вводимо значення a, a > 0 
 n = int(input("Будь ласка введіть числo n ")) #вводимо значення n, n > 0 	
